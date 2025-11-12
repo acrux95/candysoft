@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bdeda50-49e5-4bf6-93db-5d347ff5d24c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7bdeda50-49e5-4bf6-93db-5d347ff5d24c" name="Changes" comment="Building Supplier Services">
+      <change beforePath="$PROJECT_DIR$/config-repo/supplier-services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/supplier-services.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,6 +33,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="35IWcnCnBaju958HBR90CgD7mFB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Reverting in master",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/2638605/Desktop/projs/springboot/candysoft",
     "node.js.detected.package.eslint": "true",
@@ -45,20 +54,23 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.CandysoftApplication">
-    <configuration name="CandysoftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="candysoft" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.acrux95.code.candysoft.CandysoftApplication" />
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.acrux95.code.config_server.ConfigServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="config-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.acrux95.code.config_server.ConfigServerApplication" />
+    <configuration name="SupplierServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="supplier-services" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.acrux95.code.microservices.supplier_services.SupplierServicesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -82,8 +94,25 @@
       <workItem from="1762798149939" duration="5966000" />
       <workItem from="1762973692446" duration="23000" />
       <workItem from="1762973745310" duration="149000" />
-      <workItem from="1762974035431" duration="341000" />
+      <workItem from="1762974035431" duration="6036000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixing project">
+      <option name="closed" value="true" />
+      <created>1762974393278</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762974393278</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Building Supplier Services">
+      <option name="closed" value="true" />
+      <created>1762987146609</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762987146609</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +128,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixing project" />
+    <MESSAGE value="Building Supplier Services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Building Supplier Services" />
   </component>
 </project>

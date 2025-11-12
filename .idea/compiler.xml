@@ -7,14 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
-      <profile name="Annotation profile for candysoft" enabled="true">
+      <profile name="Annotation profile for microservices" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
+        <module name="supplier-services" />
         <module name="config-server" />
       </profile>
     </annotationProcessing>
@@ -23,6 +23,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="candysoft" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="microservices" options="-parameters" />
+      <module name="supplier-services" options="-parameters" />
     </option>
   </component>
 </project>
