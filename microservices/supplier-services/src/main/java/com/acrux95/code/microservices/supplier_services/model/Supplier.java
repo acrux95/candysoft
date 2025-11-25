@@ -20,7 +20,7 @@ public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "supplier_seq")
     @SequenceGenerator(name = "supplier_seq", sequenceName = "supplier_sequence", allocationSize = 1)
-    private Long id;
+    private String id;
     private String name;
     private String phoneNumber;
     private String email;
@@ -35,4 +35,6 @@ public class Supplier {
     @UpdateTimestamp
     @Column(name = "date_updated", columnDefinition = "datetime")
     private LocalDateTime dateUpdated;
+
+    private boolean active = true;
 }

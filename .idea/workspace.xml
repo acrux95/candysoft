@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bdeda50-49e5-4bf6-93db-5d347ff5d24c" name="Changes" comment="Building Supplier Services">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="7bdeda50-49e5-4bf6-93db-5d347ff5d24c" name="Changes" comment="Fixing project">
+      <change afterPath="$PROJECT_DIR$/microservices/supplier-services/src/main/java/com/acrux95/code/microservices/supplier_services/configuration/SupplierMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/supplier-services/src/main/java/com/acrux95/code/microservices/supplier_services/configuration/SupplierRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/supplier-services/src/main/java/com/acrux95/code/microservices/supplier_services/configuration/SupplierResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/supplier-services/src/main/java/com/acrux95/code/microservices/supplier_services/controller/SupplierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/supplier-services/src/main/java/com/acrux95/code/microservices/supplier_services/repository/SupplierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/supplier-services/src/main/java/com/acrux95/code/microservices/supplier_services/service/SupplierService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/supplier-services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/supplier-services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices/supplier-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/supplier-services/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/supplier-services/src/main/java/com/acrux95/code/microservices/supplier_services/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/supplier-services/src/main/java/com/acrux95/code/microservices/supplier_services/model/Supplier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +23,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -76,6 +79,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.acrux95.code.microservices.supplier_services.configuration" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Supplier Service">
     <configuration name="Config Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.acrux95.code.config_server.ConfigServerApplication" />
@@ -148,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762987146609</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixing project">
+      <option name="closed" value="true" />
+      <created>1764034072204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764034072204</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,8 +182,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixing project" />
     <MESSAGE value="Building Supplier Services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Building Supplier Services" />
+    <MESSAGE value="Fixing project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing project" />
   </component>
 </project>
