@@ -1,3 +1,5 @@
 spring:
   application:
     name: supplier-services
+  config:
+    import: configserver:http://localhost:8888,optional:file:///C:/Users/Armando/.config/supplier-services-local.yml

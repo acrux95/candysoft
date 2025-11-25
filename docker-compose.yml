@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  supplier-service:
+    build: ./microservices/supplier-services
+    container_name: supplier-service
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    networks:
+      - candysoft-net
+
+#  product-service:
+#    build: ./microservices_/product-service
+#    container_name: product-service
+#    ports:
+#      - "8082:8082"
+#    environment:
+#      SPRING_PROFILES_ACTIVE: docker
+#    networks:
+#      - candysoft-net
+#
+#  purchase-service:
+#    build: ./microservices_/purchase-service
+#    container_name: purchase-service
+#    ports:
+#      - "8083:8083"
+#    environment:
+#      SPRING_PROFILES_ACTIVE: docker
+#    networks:
+#      - candysoft-net
+
+networks:
+  candysoft-net:
+    driver: bridge

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/candysoft.iml" filepath="$PROJECT_DIR$/candysoft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservices/supplier-services/supplier-services.iml" filepath="$PROJECT_DIR$/microservices/supplier-services/supplier-services.iml" />
     </modules>
   </component>
 </project>
