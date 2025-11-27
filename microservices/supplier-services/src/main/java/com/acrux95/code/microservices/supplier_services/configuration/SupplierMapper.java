@@ -22,8 +22,6 @@ public class SupplierMapper {
                 .city(request.city())
                 .state(request.state())
                 .country(request.country())
-                .dateCreated(LocalDateTime.parse(request.dateCreated()))
-                .dateUpdated(LocalDateTime.parse(request.dateUpdated()))
                 .build();
     }
 
@@ -37,8 +35,12 @@ public class SupplierMapper {
                 .city(supplier.getCity())
                 .state(supplier.getState())
                 .country(supplier.getCountry())
-                .dateCreated(String.valueOf(supplier.getDateCreated()))
-                .dateUpdated(String.valueOf(supplier.getDateUpdated()))
+                .dateCreated(supplier.getDateCreated() != null
+                        ? supplier.getDateCreated().toString()
+                        : null)
+                .dateUpdated(supplier.getDateUpdated() != null
+                        ? supplier.getDateUpdated().toString()
+                        : null)
                 .build();
     }
 }

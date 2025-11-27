@@ -32,15 +32,15 @@ public class SupplierController {
         return ResponseEntity.ok(service.getSuppliers());
     }
 
-    @PutMapping
-    public ResponseEntity<Void> updateSupplier(@Valid @RequestBody SupplierRequest request){
-        service.saveSupplier(request);
-        return ResponseEntity.accepted().build();
+    @PutMapping("/{supplierId}")
+    public ResponseEntity<String> updateSupplier(@PathVariable String supplierId, @Valid @RequestBody SupplierRequest request){
+        service.updateSupplier(supplierId, request);
+        return ResponseEntity.ok("Supplier updated successfully");
     }
 
     @DeleteMapping("/{supplierId}")
-    public ResponseEntity<Void> disable(@PathVariable ("supplierId") String supplierId){
+    public ResponseEntity<String> disable(@PathVariable ("supplierId") String supplierId){
         service.disableSupplier(supplierId);
-        return ResponseEntity.accepted().build();
+        return ResponseEntity.ok("Supplier " + supplierId + " disabled successfully.");
     }
 }

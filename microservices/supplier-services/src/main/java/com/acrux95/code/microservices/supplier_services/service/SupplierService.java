@@ -25,15 +25,30 @@ public class SupplierService {
 
     public SupplierResponse getSupplierById(String supplierId) {
         return repository
-                .findById(supplierId)
+                .findByIdAndActiveTrue(supplierId)
                 .map(mapper::toSupplierResponse)
                 .orElse(null);
     }
 
     public List<SupplierResponse> getSuppliers() {
-        return repository.findAll().stream()
+        return repository.findAllByActiveTrue().stream()
                 .map(mapper::toSupplierResponse)
                 .toList();
+    }
+
+    public void updateSupplier(String supplierId, SupplierRequest request){
+        Supplier supplier = repository.findById(supplierId)
+                .orElseThrow(() -> new RuntimeException("Supplier not found"));
+
+        supplier.setName(request.name());
+        supplier.setPhoneNumber(request.phoneNumber());
+        supplier.setEmail(request.email());
+        supplier.setAddress(request.address());
+        supplier.setCity(request.city());
+        supplier.setState(request.state());
+        supplier.setCountry(request.country());
+
+        repository.save(supplier);
     }
 
     public void disableSupplier(String supplierId) {

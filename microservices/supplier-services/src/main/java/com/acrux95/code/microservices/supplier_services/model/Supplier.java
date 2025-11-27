@@ -6,7 +6,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.annotations.Where;
 
 import java.time.LocalDateTime;
 
@@ -29,12 +31,14 @@ public class Supplier {
     private String state;
     private String country;
 
-    @Column(updatable = false, name = "date_created", columnDefinition = "datetime")
+    @Column(updatable = false, name = "date_created")
     @CreationTimestamp
     private LocalDateTime dateCreated;
+
+    @Column(name = "date_updated")
     @UpdateTimestamp
-    @Column(name = "date_updated", columnDefinition = "datetime")
     private LocalDateTime dateUpdated;
 
+    @Builder.Default
     private boolean active = true;
 }

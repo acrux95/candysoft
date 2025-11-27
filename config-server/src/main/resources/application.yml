@@ -5,8 +5,11 @@ spring:
   application:
     name: config-server
 
+  profiles:
+    active: native
+
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/acrux95/candysoft.git
+        native:
+          search-locations: file:///C:/Users/2638605/Desktop/projs/springboot/candysoft/config-repo

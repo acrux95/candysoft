@@ -1,13 +1,4 @@
 spring:
-  datasource:
-#    username:
-#    password:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        format_sql: true
   main:
     allow-bean-definition-overriding: true
 
