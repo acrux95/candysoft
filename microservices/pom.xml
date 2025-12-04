@@ -18,6 +18,7 @@
     <modules>
         <module>supplier-services</module>
         <module>product-services</module>
+         <module>purchase-services</module>
     </modules>
 
     <dependencies>
